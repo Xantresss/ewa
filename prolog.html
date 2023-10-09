@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prolog</title>
+    <link rel="stylesheet" href="styl2.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="responsive" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="gallery">
+          <a target="_blank" href="trup2.jpg">
+            <img src="trup2.jpg" alt="jacob">
+          </a>
+          <div class="desc">Tą część pisze 9 października robie wszystko żeby zdąrzyć z skończeniem tego projektu. Chce żebyś wiedziała że to że nie spotykamy się dziś kiedy to czytasz czyli 10 października to jest najgorsza wiadomość jaką od ciebie usłyszałem kiedykolwiek.</div>
+        </div>
+      </div>
+      
+      <div class="responsive" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="gallery">
+          <a target="_blank" href="przyjaciele.jpg">
+            <img src="przyjaciele.jpg" alt="Debil XD">
+          </a>
+          <div class="desc">Tak nawet zostańmy przyjaciółmi 2 razy było mniej bolesne XDDD. Niestety muszę już na starcie zaspojlerować niektóre rzeczy które dopiero przed tobą.Po zakończeniu czytania danej z częśći napisz do mnie i wtedy wejdź dalej.</div>
+        </div>
+      </div>
+      
+      <div class="responsive" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="gallery">
+          <a target="_blank" href="serwis.jpg">
+            <img src="serwis.jpg" alt="Northern Lights">
+          </a>
+          <div class="desc">W hexagonie o podpisie wstęp masz jakieś małe zadanka odemnie i małe prezenty których niestety nie mogę ci dać. I już ci więcej ich nie dam bo i tak byś ich nie przyjeła teraz. </div>
+        </div>
+      </div>
+      
+      <div class="responsive" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="gallery">
+          <a target="_blank" href="cosnietak.jpg">
+            <img src="cosnietak.jpg" alt="Mountains">
+          </a>
+          <div class="desc">Co jeszcze musisz wiedzieć. Pisze o osobie po lewej. To miałem być ja. Niestety jest jak jest. Nie będe ukrywał że bardzo chciałem cię zobaczyć, szczególnie po tym jak na meczu czyłem że było coś nie tak.</div>
+        </div>
+      </div>
+
+      <div class="responsive" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="gallery">
+          <a target="_blank" href="chlejusy.jpg">
+            <img src="chlejusy.jpg" alt="Mountains">
+          </a>
+          <div class="desc">Oczywiście poziom żartów tam będzie niski, teraz już rozumiem że z dnia na dzień jestem starszy o parę miesięcy od siebie z wczoraj XD.</div>
+        </div>
+      </div>
+
+      <div class="responsive" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="gallery">
+          <a target="_blank" href="zawód1.jpg">
+            <img src="zawód1.jpg" alt="Mountains">
+          </a>
+          <div class="desc">Chcę jeszcze żebyś wiedziała że czuje że zawiodłem swoje i twoje oczekiwania co do tego pomysłu. Chciałem spędzić z tobą czas, zobaczyć bajkę i sprawić ci trochę szczęcia. Ale, zdrowie jest ważniejsze niż jakiś przygłup z koniuch i nie przejmuj się.</div>
+        </div>
+      </div>
+
+      <div class="responsive" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="gallery">
+          <a target="_blank" href="zawód2.jpg">
+            <img src="zawód2.jpg" alt="Mountains">
+          </a>
+          <div class="desc"> Jedynę czego od ciebie teraz wymagam to uśmiechu na ustach i i i i w sumie to tylko tego. Przepraszam też że nie pisałem do ciebie podczas trwania choroby jak ty. Sam wiem jak wiele radości przynosiło mi powiadomienie od ciebie. Przepraszam ale miałem ciężki czas i nie tylko. Zawiodłem siebie ale na moją obrone mogę powiedzieć że odałem całe moje serce w ten projekt.</div>
+        </div>
+      </div>
+
+      <div class="responsive" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="gallery">
+          <a target="_blank" href="zdrowiepsychiczne.jpg">
+            <img src="zdrowiepsychiczne.jpg" alt="Mountains">
+          </a>
+          <div class="desc">Życzę ci dużo zdrowia, dużo zdrowia psychicznego bo często jest on w gorszym stanie niż zdrowie fizyczne. Żebyś cały czas była taką osobą jaką cię poznałem.Na każdym zdjęciu jesteś radosna, uśmiechnięta, cieszyłaś się życiem, żyłaś chwilą. Mam nadzieję że jeszcze kiedyś znajdziesz kogoś co sprawi ci tyle radości i pięknych chwil jak tamtę.</div>
+        </div>
+      </div>
+
+      <div class="responsive" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="gallery">
+          <a target="_blank" href="scisk.jpg">
+            <img src="scisk.jpg" alt="Mountains">
+          </a>
+          <div class="desc">Wszystkiego najlepszego ewcia. wirtualnie sciskam.<br>
+            Bartek.
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+         showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+    showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+         let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+         }
+        for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
+    
+</body>
+</html>
